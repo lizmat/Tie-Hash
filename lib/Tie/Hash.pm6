@@ -1,6 +1,6 @@
 use v6.c;
 
-class Tie::Hash:ver<0.0.4>:auth<cpan:ELIZABETH> {
+class Tie::Hash:ver<0.0.5>:auth<cpan:ELIZABETH> {
 
     method EXISTS($) { die self.^name ~ " doesn't define an EXISTS method" }
 
@@ -23,7 +23,7 @@ class Tie::Hash:ver<0.0.4>:auth<cpan:ELIZABETH> {
 
 =head1 NAME
 
-Tie::Hash - Implement Perl 5's Tie::Hash core module
+Tie::Hash - Implement Perl's Tie::Hash core module
 
 =head1 SYNOPSIS
 
@@ -50,9 +50,9 @@ Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2018 Elizabeth Mattijsen
+Copyright 2018-2019 Elizabeth Mattijsen
 
-Re-imagined from Perl 5 as part of the CPAN Butterfly Plan.
+Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
