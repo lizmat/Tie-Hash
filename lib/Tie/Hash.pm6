@@ -1,6 +1,6 @@
-use v6.c;
+use v6.*;
 
-class Tie::Hash:ver<0.0.6>:auth<cpan:ELIZABETH> {
+class Tie::Hash:ver<0.0.7>:auth<cpan:ELIZABETH> {
 
     method EXISTS($) { die self.^name ~ " doesn't define an EXISTS method" }
 
@@ -23,13 +23,17 @@ class Tie::Hash:ver<0.0.6>:auth<cpan:ELIZABETH> {
 
 =head1 NAME
 
-Tie::Hash - Implement Perl's Tie::Hash core module
+Raku port of Perl's Tie::Hash module
 
 =head1 SYNOPSIS
 
+  use P5tie;
   use Tie::Hash;
 
 =head1 DESCRIPTION
+
+This module tries to mimic the behaviour of Perl's C<Tie::Hash> module
+as closely as possible in the Raku Programming Language.
 
 Tie::Hash is a module intended to be subclassed by classes using the
 L<P5tie|tie()> interface.  It provides implementations of the C<CLEAR>,
@@ -50,10 +54,12 @@ Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2018-2019 Elizabeth Mattijsen
+Copyright 2018-2020 Elizabeth Mattijsen
 
 Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
 =end pod
+
+# vim: expandtab shiftwidth=4

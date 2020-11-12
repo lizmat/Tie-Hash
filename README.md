@@ -1,15 +1,18 @@
 NAME
 ====
 
-Tie::Hash - Implement Perl's Tie::Hash core module
+Raku port of Perl's Tie::Hash module
 
 SYNOPSIS
 ========
 
+    use P5tie;
     use Tie::Hash;
 
 DESCRIPTION
 ===========
+
+This module tries to mimic the behaviour of Perl's `Tie::Hash` module as closely as possible in the Raku Programming Language.
 
 Tie::Hash is a module intended to be subclassed by classes using the [P5tie](tie()) interface. It provides implementations of the `CLEAR`, `UNTIE` and `DESTROY` methods. It also provides a stub for the `EXISTS` method, but one needs to supply an `EXISTS` method for real `exists` functionality. All other `tie` methods should be provided.
 
@@ -28,7 +31,7 @@ Source can be located at: https://github.com/lizmat/Tie-Hash . Comments and Pull
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2018-2019 Elizabeth Mattijsen
+Copyright 2018-2020 Elizabeth Mattijsen
 
 Re-imagined from Perl as part of the CPAN Butterfly Plan.
 

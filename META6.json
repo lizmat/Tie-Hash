@@ -1,25 +1,28 @@
 {
-  "auth" : "cpan:ELIZABETH",
-  "authors" : [
+  "auth": "cpan:ELIZABETH",
+  "authors": [
     "Elizabeth Mattijsen"
   ],
-  "build-depends" : [ ],
-  "depends" : [
-    "P5tie"
+  "build-depends": [
   ],
-  "description" : "Implement Perl's Tie::Hash core module",
-  "license" : "Artistic-2.0",
-  "name" : "Tie::Hash",
-  "perl" : "6.c",
-  "provides" : {
-    "Tie::Hash" : "lib/Tie/Hash.pm6"
+  "depends": [
+    "P5tie:ver<0.0.13>:auth<cpan:ELIZABETH>"
+  ],
+  "description": "Raku port of Perl's Tie::Hash module",
+  "license": "Artistic-2.0",
+  "name": "Tie::Hash",
+  "perl": "6.c",
+  "provides": {
+    "Tie::Hash": "lib/Tie/Hash.pm6"
   },
-  "resources" : [ ],
-  "source-url" : "https://github.com/lizmat/Tie-Hash.git",
-  "tags" : [
+  "resources": [
+  ],
+  "source-url": "https://github.com/lizmat/Tie-Hash.git",
+  "tags": [
     "UTILS",
     "CPAN5"
   ],
-  "test-depends" : [ ],
-  "version" : "0.0.6"
+  "test-depends": [
+  ],
+  "version": "0.0.7"
 }
