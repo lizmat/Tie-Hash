@@ -1,6 +1,6 @@
 use v6.*;
 
-class Tie::Hash:ver<0.0.7>:auth<cpan:ELIZABETH> {
+class Tie::Hash:ver<0.0.8>:auth<zef:lizmat> {
 
     method EXISTS($) { die self.^name ~ " doesn't define an EXISTS method" }
 
@@ -47,14 +47,14 @@ L<P5tie>, L<Tie::StdHash>
 
 =head1 AUTHOR
 
-Elizabeth Mattijsen <liz@wenzperl.nl>
+Elizabeth Mattijsen <liz@raku.rocks>
 
 Source can be located at: https://github.com/lizmat/Tie-Hash . Comments and
 Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2018-2020 Elizabeth Mattijsen
+Copyright 2018, 2019, 2020, 2021 Elizabeth Mattijsen
 
 Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
